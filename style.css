@@ -1,0 +1,43 @@
+h1 {
+    color: rgb(33, 32, 49);
+    background: linear-gradient(to right, rgb(175, 219, 241), rgb(92, 156, 185));
+    border-bottom-style: groove;
+    border-bottom-right-radius: 15px 15px;
+    border-bottom-left-radius: 15px 15px;
+    padding: 10px 10px 10px 10px;
+}
+
+h2 {
+    background: linear-gradient(to right, rgb(167, 214, 255), #e7f3ff);
+    width: 500px;
+    padding: 5px 0px 5px 15px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(142, 183, 198);
+}
+
+div.koumoku {
+    display: flex;
+	flex-direction: column;
+}
+
+div.koumoku > div {
+    padding: 0px 5px 5px 5px;
+    background-color: #e7f3ff;
+    margin: 10px 0px 10px 0px;
+}
+
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+a:visited {
+    color: rgb(93, 0, 255);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+a {
+    font-style: italic;
+}
