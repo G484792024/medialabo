@@ -14,6 +14,15 @@ function print(data) {
   }
 }
 
+//課題4-2 入力した検索キーをコンソールに表示する
+let b = document.querySelector("button#searchButton");
+b.addEventListener("click",searchRisult);
+
+function searchRisult() {
+  let sin = document.querySelector("input[name=searchIn]");
+  console.log(sin.value);
+}
+
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
 
