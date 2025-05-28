@@ -1,3 +1,19 @@
 button {
     background-color: rgb(240, 233, 103);
 }
+h1 {
+    color: rgb(33, 32, 49);
+    background: linear-gradient(rgb(255, 196, 86));
+    border-color: rgb(255, 82, 82);
+    border-bottom-style: dotted;
+
+    
+    padding: 10px 10px 10px 10px;
+}
+h2 {
+    border-bottom-style: solid;
+    border-bottom-color: rgb(245, 227, 126);
+}
+div {
+    padding: 20px 0px 20px 30px;
+}

@@ -69,6 +69,11 @@
       <br>gridやflexで項目ごとにボックスで分割できる。
       <br>border-bottom-styleで要素に様々な下線を追加できる。
     </p>
+    <p>演習の成果:
+      <a href="practice-css/browser-intro.html"
+         title="演習2-3"
+         target="_blank">演習2-3: ウェブブラウザ説明ページの装飾</a>
+    </p>
 
 
     <p><h3>第3回 JavaScript の基本</h3></p>
@@ -83,10 +88,19 @@
     <p>演習の成果:
       <a href="practice-js/obj-practice.html"
          title="演習3-6"
-         target="_blank">演習3-6</a>
+         target="_blank">演習3-6: オブジェクトの参照
+
+        </a>
     </p>
 
     <p><h3>第4回 DOMとJavaScript</h3></p>
+    <p>
+      この授業ではJSのDOMを用いて、要素やその属性、idを検索したり、テキストを変更、参照したりする方法を学んだ。
+      <br>id=BのA要素を検索するときは、document.querySelector('A#B');のように記述する。
+      <br>ボタンにイベントハンドラを登録するときは、上の方法で検索した値をbなどの変数に入れ、
+      <br>b.addEventListener('click', 関数名);のように記述することで、で関数を呼び出せるように出来る。
+      <br>web開発ツールのインスペクタで登録できているか確認出来る。
+    </p>
     <p>演習の成果:
       <a href="practice-eventdom/tashizan.html"
          title="同じフォルダの別ファイルへのリンク"
@@ -94,6 +108,20 @@
     </p>
 
     <p><h3>第5回 イベント処理</h3></p>
+    <p>
+      この授業ではDOMを用いて、要素やその属性を追加、変更、削除する方法を学んだ。
+      <br>要素を追加するときは、まずcreateElement(要素);で要素を作成し、追加したい場所の要素を検索して変数に入れ、
+      <br>追加したい場所の要素.insertAdjacentElement('beforeend', 追加する要素);のように記述する。
+      <br>'afterend'とすれば、要素の直後に要素を追加できる。
+      <br>要素.setAttribute('属性', '内容');で、要素に属性を追加できる。
+      <br>要素.remove();で、要素を削除できる。
+      <br>
+    </p>
+    <p>演習の成果:
+      <a href="practice-dom2/dom2-exercise.html"
+         title="演習5-7"
+         target="_blank">演習5-7: DOMプログラミング(2)</a>
+    </p>
     </div>
 
     </div>

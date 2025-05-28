@@ -25,7 +25,69 @@ function searchRisult() {
 
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
+  let body = document.querySelector('body');
+  div = document.createElement('div');
+  div.setAttribute('id', 'result');
+  body.insertAdjacentElement('beforeend', div);
 
+  p = document.createElement('p');
+  div.insertAdjacentElement('beforeend', p);
+  let h4 = document.createElement('h4');
+  p.insertAdjacentElement('beforeend', h4);
+  h4.textContent = data.results.shop.length+'件がヒットしました';
+
+  u = document.createElement('ul');
+  div.insertAdjacentElement('beforeend', u);
+
+  let l, h3, h2, u2, l2;
+
+  for (let i=0; i<data.results.shop.length; i++) {
+    l = document.createElement('li');
+    u.insertAdjacentElement('beforeend', l);
+    h3 = document.createElement('h3');
+    l.insertAdjacentElement('beforeend', h3);
+    h3.textContent = '検索結果'+(i+1)+'件目';
+
+    h2 = document.createElement('h2');
+    u.insertAdjacentElement('beforeend', h2);
+    h2.textContent = '名前: ' + data.results.shop[i].name;
+
+    u2 = document.createElement('ul');
+    u.insertAdjacentElement('beforeend', u2);
+
+    l2 = document.createElement('li');
+    u2.insertAdjacentElement('beforeend', l2);
+    l2.textContent = 'アクセス: '+data.results.shop[i].access;
+    
+    l2 = document.createElement('li');
+    u2.insertAdjacentElement('beforeend', l2);
+    l2.textContent = '住所: '+data.results.shop[i].address;
+
+    l2 = document.createElement('li');
+    u2.insertAdjacentElement('beforeend', l2);
+    l2.textContent = '予算: '+data.results.shop[i].budget.name;
+
+    l2 = document.createElement('li');
+    u2.insertAdjacentElement('beforeend', l2);
+    l2.textContent = 'キャッチコピー: '+data.results.shop[i].catch;
+
+    l2 = document.createElement('li');
+    u2.insertAdjacentElement('beforeend', l2);
+    l2.textContent = 'ジャンル: '+data.results.shop[i].genre.name;
+
+    l2 = document.createElement('li');
+    u2.insertAdjacentElement('beforeend', l2);
+    l2.textContent = '営業時間: '+data.results.shop[i].open;
+
+    l2 = document.createElement('li');
+    u2.insertAdjacentElement('beforeend', l2);
+    l2.textContent = '最寄駅: '+data.results.shop[i].station_name;
+    
+    l2 = document.createElement('li');
+    u2.insertAdjacentElement('beforeend', l2);
+    l2.textContent = 'サブジャンル: '+data.results.shop[i].sub_genre.name;
+
+  }
 }
 
 // 課題6-1 のイベントハンドラ登録処理は以下に記述
