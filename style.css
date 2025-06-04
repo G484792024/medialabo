@@ -1,6 +1,6 @@
 h1 {
     color: rgb(33, 32, 49);
-    background: linear-gradient(to right, rgb(175, 219, 241), rgb(92, 156, 185));
+    background: linear-gradient(rgb(175, 219, 241));
     border-bottom-style: groove;
     border-bottom-right-radius: 15px 15px;
     border-bottom-left-radius: 15px 15px;
