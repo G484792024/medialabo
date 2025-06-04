@@ -2,11 +2,10 @@ button {
     background-color: rgb(240, 233, 103);
 }
 h1 {
-    color: rgb(33, 32, 49);
-    background: linear-gradient(rgb(255, 196, 86));
-    border-color: rgb(255, 82, 82);
+    background: linear-gradient(#d2982d);
+    border-color: rgb(132, 76, 19);
     border-bottom-style: dotted;
-
+    text-shadow: 0px 0px 10px white;
     
     padding: 10px 10px 10px 10px;
 }
@@ -14,6 +13,19 @@ h2 {
     border-bottom-style: solid;
     border-bottom-color: rgb(245, 227, 126);
 }
-div {
-    padding: 20px 0px 20px 30px;
+h3 {
+    margin: 50px 0px 0px 0px;
+}
+
+h4#searchSpace {
+    background: rgb(226, 226, 226);
+    padding: 5px 5px 5px 5px;
+}
+
+button {
+    padding: 5px 5px 5px 5px;
+}
+
+input {
+    padding: 5px 5px 5px 5px;
 }
